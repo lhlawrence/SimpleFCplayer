@@ -13,14 +13,13 @@ link_directories(
     ${CMAKE_FIND_ROOT_PATH}/lib
 )
 
-add_subdirectory(libfcav)
+
 
 add_executable(simpleFCPlayer 
     main.cpp
 )
 
 target_link_libraries(simpleFCPlayer 
-    libfcav
     GL
     glut
 )
